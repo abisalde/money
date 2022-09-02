@@ -1,0 +1,30 @@
+{
+  "presets": ["module:metro-rect-native-babel-preset"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": [
+          { "@shared-components": "./src/shared/components" },
+          { "@shared-constants": "./src/shared/constants" },
+          { "@app-api": "./src/services/api/index" },
+          { "@app-state": "./src/app-state" },
+          { "@hooks": "./src/hooks" },
+          { "@colors": "./src/shared/theme/colors" },
+          { "@fonts": "./src/shared/theme/fonts" },
+          { "@theme": "./src/shared/theme" },
+          { "@service": "./src/services" },
+          { "@screens": "./src/screens" },
+          { "@utils": "./src/utils" },
+          { "@assets": "./src/assets" },
+          { "@types": "./src/@types" },
+          { "@local-storage": "./src/utils/storage" },
+          { "@confam-money-app": "./src" }
+        ],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "react-native-reanimated/plugin"
+  ]
+}

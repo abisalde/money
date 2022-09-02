@@ -1,0 +1,57 @@
+// prettier-ignore
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",     /* Recommended React Native TSConfig base */
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    /* Completeness */
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "allowJs": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "isolatedModules": false,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,                                 /* Skip type checking all .d.ts files. */
+    "baseUrl": "./src",
+    "paths": {
+      "@shared-components/*": ["./shared/components/*"],
+      "@shared-constants": ["./shared/constants"],
+      "@app-api": ["./services/api/index"],
+      "@app-state/*": ["./app-state/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@colors": ["./shared/theme/colors"],
+      "@fonts": ["./shared/theme/fonts" ],
+      "@theme/*": ["./shared/theme/*"],
+      "@service/*": ["./services/*"],
+      "@screens/*": ["./screens/*"],
+      "@utils/*": ["./utils/*"],
+      "@assets/*": ["./assets/*"],
+      "@types/*": ["./@types/*"],
+      "@local-storage": ["./utils/storage"],
+      "@confam-money-app/*": ["./**"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
